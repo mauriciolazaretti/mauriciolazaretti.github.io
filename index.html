@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0036)https://mauriciolazaretti.github.io/#about -->
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Mauricio Lazaretti - Desenvolvedor de Sistemas, Analista e Consultor Web</title>
+    <meta name="description" content="Mauricio Lazaretti, desenvolvedor de sistemas, analista e consultor web. Experiência em C#, .NET, bancos, seguradoras e consultoria web.">
+    <meta name="keywords" content="Mauricio Lazaretti, desenvolvedor, analista de sistemas, consultoria web, C#, .NET, bancos, seguradoras, Fatec, UNIRP, portfólio, programação, TI, tecnologia">
+    <meta name="author" content="Mauricio Lazaretti">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Mauricio Lazaretti - Desenvolvedor de Sistemas, Analista e Consultor Web">
+    <meta property="og:description" content="Mauricio Lazaretti, desenvolvedor de sistemas, analista e consultor web. Experiência em C#, .NET, bancos, seguradoras e consultoria web.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mauriciolazaretti.github.io/">
+    <meta property="og:image" content="https://mauriciolazaretti.github.io/img/e2ad4515-7f6c-4366-8f24-f331aac2e941.jpg">
+    <link rel="canonical" href="https://mauriciolazaretti.github.io/">
+
+
+    <script src="https://kit.fontawesome.com/682e5f18ae.js" crossorigin="anonymous"></script>    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
+    <link href="./css/css2" rel="stylesheet">
+
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+
+    <link href="./css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-icons.css" rel="stylesheet">
+    <link href="./css/aos(1).css" rel="stylesheet">
+    <link href="./css/glightbox.min.css" rel="stylesheet">
+    <link href="./css/swiper-bundle(1).min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <style>
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+            padding-left: 20px;
+            border-left: 2px solid #0d6efd;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .timeline-content {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            margin-left: 1rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -19px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #0d6efd;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+
+        .timeline-content h5 i {
+            margin-right: 0.5rem;
+        }
+
+        .badge.bg-purple {
+            background: #9b59b6 !important;
+            color: #fff !important;
+        }
+
+        #listMenu li a:hover {
+            color: #0d6efd;
+            text-decoration: underline;
+        }
+
+        #listMenu {
+            transition: all 0.3s;
+        }
+
+        @media (max-width: 1200px) {
+            #listMenu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 90vw;
+                height: 90vh;
+                background: #222;
+                z-index: 9999;
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 0;
+                border-radius: 0 0 1rem 0;
+            }
+
+                #listMenu li {
+                    width: 100%;
+                    text-align: center;
+                    margin: 1rem 0;
+                }
+
+                    #listMenu li a {
+                        color: #fff;
+                        font-size: 2rem;
+                    }
+        }
+    </style>
+</head>
+<body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0">
+
+
+    <main class="main">
+
+        <header id="header" class="header d-flex align-items-center sticky-top">
+            <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+                <a href="https://mauriciolazaretti.github.io/" class="logo d-flex align-items-center">
+
+                    <h1 class="sitename">Mauricio Lazaretti</h1>
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul id="listMenu">
+                        <li><a href="https://mauriciolazaretti.github.io/#home" class="active">Home<br></a></li>
+                        <li><a href="https://mauriciolazaretti.github.io/#about" class="">Sobre</a></li>
+                        <li><a href="https://mauriciolazaretti.github.io/#skills" class="">Habilidades</a></li>
+                        <li><a href="https://mauriciolazaretti.github.io/#academic" class="">Formação</a></li>
+                        <li><a href="https://mauriciolazaretti.github.io/#experience" class="">Experiência</a></li>
+                        <li><a href="https://mauriciolazaretti.github.io/#contact" class="">Contato</a></li>
+                    </ul>
+                    <div>
+                        <i id="menuOpen" onclick="abrirMenu()" class="d-xl-none fa-solid fa-bars" style="color:white"></i>
+                        <i id="menuClose" onclick="fecharMenu()" class="d-xl-none fa-solid fa-x" style="color:white; display:none;"></i>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero section dark-background">
+
+
+            <div class="container d-flex flex-column align-items-center justify-content-center text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <h2>Mauricio Lazaretti</h2>
+                <br />
+                <p>Analista de sistemas, programador e desenvolvedor de sistemas.</p>
+            </div>
+
+        </section><!-- /Hero Section -->
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+                    <div class="col-md-6">
+
+                        <div class="row justify-content-between gy-4">
+                            <div class="col-lg-5">
+                                <img src="./img/e2ad4515-7f6c-4366-8f24-f331aac2e941.jpg" class="img-fluid" alt="">
+                            </div>
+
+                            <div class="col-lg-7 about-info">
+                                <p><strong>Nome: </strong> <span>Mauricio Lazaretti</span></p>
+                                <p><strong>E-mail: </strong> <span>mauricio.lazaretti94@gmail.com</span></p>
+                                <p><strong>Telefone: </strong> <span class="phone_with_ddd">(17) 98815-1122</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="about-me">
+                            <h4>Sobre mim</h4>
+                            <p>
+                                Olá!
+
+                                Me chamo Mauricio Lazaretti e atuo há 6 anos como desenvolvedor de software com uma sólida experiência em ambientes de alta exigência. Ao longo da minha carreira, tive a oportunidade de trabalhar em grandes corporações, como seguradoras, bancos e empresas de tecnologia, onde a robustez, a segurança e a escalabilidade do código são essenciais.
+
+                                Minha trajetória profissional é marcada pelo desenvolvimento de soluções críticas, desde a criação de sistemas de processamento de transações de alto volume até a implementação de plataformas de gestão de dados complexas. Em cada projeto, meu foco sempre foi em entregar um código limpo, eficiente e de fácil manutenção, seguindo as melhores práticas de desenvolvimento e arquitetura de software.
+
+                                Estou sempre em busca de novos desafios e acredito que a combinação da minha experiência com minha paixão por tecnologia me permite criar soluções inovadoras e confiáveis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /About Section -->
+        <!-- Skills Section -->
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="section-title">
+                    <h2>Habilidades</h2>
+                </div>
+                <div class="row gy-4 justify-content-center">
+                    <!-- Primeira linha -->
+                    <div class="col-12 d-flex justify-content-center flex-wrap mb-4">
+                        <div class="col-6 col-md-2 text-center mb-4">
+                            <img width="100px" class="img-fluid" src="./img/csharp.webp" alt="C#">
+                        </div>
+                        <div class="col-6 col-md-2 text-center mb-4">
+                            <img width="100px" class="img-fluid" src="./img/git.webp" alt="Git">
+                        </div>
+                        <div class="col-6 col-md-2 text-center mb-4">
+                            <img width="100px" class="img-fluid" src="./img/php.png" alt="PHP">
+                        </div>
+                        <div class="col-6 col-md-2 text-center mb-4">
+                            <img width="150px" class="img-fluid" src="./img/postgres.png" alt="PostgreSQL">
+                        </div>
+                        <div class="col-6 col-md-2 text-center mb-4">
+                            <img width="100px" class="img-fluid" src="./img/angular.webp" alt="angular">
+                        </div>
+                    </div>
+                    <!-- Segunda linha -->
+                    <div class="col-12 d-flex justify-content-center flex-wrap">
+                        <div class="col-6 col-md-2 text-center mb-4">
+                            <img width="100px" class="img-fluid" src="./img/sqlserver.webp" alt="SQL Server">
+                        </div>
+                        <div class="col-6 col-md-2 text-center mb-4">
+                            <img width="100px" class="img-fluid" src="./img/linux.webp" alt="Linux">
+                        </div>
+                        <div class="col-6 col-md-2 text-center mb-4">
+                            <img width="100px" class="img-fluid" src="./img/docker.png" alt="Docker">
+                        </div>
+                        <div class="col-6 col-md-2 text-center mb-4">
+                            <img width="100px" class="img-fluid" src="./img/aws.png" alt="AWS">
+                        </div>
+                        <div class="col-6 col-md-2 text-center mb-4">
+                            <img width="100px" class="img-fluid" src="./img/java.png" alt="java">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Academic Background Section -->
+        <section id="academic" class="academic section">
+
+            <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+                    <div class="col-md-6">
+
+                        <div class="row justify-content-between gy-4">
+
+                            <div class="col-lg-7 about-info">
+                                <p><strong>Graduação: </strong> <span>Ciência da Computação - UNIRP</span></p>
+                                <p><strong>Pós-graduação: </strong> <span>Consultoria Web - Fatec Rio Preto</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="about-me">
+                            <h4>Formação Acadêmica</h4>
+                            <p>
+                                Sou graduado em Ciência da Computação pela UNIRP, onde desenvolvi uma base sólida em algoritmos, programação e arquitetura de sistemas.
+                                Também possuo pós-graduação em Consultoria Web pela Fatec Rio Preto, ampliando meus conhecimentos em desenvolvimento web, gestão de projetos e soluções digitais.
+                                Essa formação acadêmica complementa minha experiência profissional, permitindo atuar com excelência em projetos de alta complexidade e inovação.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Academic Background Section -->
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="section-title">
+                    <h2>Experiência Profissional</h2>
+                </div>
+                <div class="timeline">
+                    <!-- Discover Innovation -->
+                    <div class="timeline-item">
+                        <div class="timeline-date" style="color:#1abc9c;">
+                            <i class="fa-solid fa-building-columns"></i> 11/2024 – Atualmente
+                        </div>
+                        <div class="timeline-content" style="border-left: 5px solid #1abc9c;">
+                            <h5>
+                                <i class="fa-solid fa-lightbulb"></i> Discover Innovation
+                            </h5>
+                            <span class="badge bg-success mb-1">
+                                <i class="fa-solid fa-user-tie"></i> Analista Desenvolvedor de Sistemas III
+                            </span>
+                            <p>
+                                Atuação na segunda maior seguradora no Brasil, do Grupo HDI (Yelum). Desenvolvimento de melhorias nos sistemas existentes em .NET, C#, VB.NET, Oracle, PL/SQL, MongoDB.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Compass Uol -->
+                    <div class="timeline-item">
+                        <div class="timeline-date" style="color:#e67e22;">
+                            <i class="fa-solid fa-building"></i> 09/2022 – 10/2024
+                        </div>
+                        <div class="timeline-content" style="border-left: 5px solid #e67e22;">
+                            <h5>
+                                <i class="fa-solid fa-compass-drafting"></i> Compass Uol
+                            </h5>
+                            <span class="badge bg-warning text-dark mb-1">
+                                <i class="fa-solid fa-server"></i> Desenvolvedor Backend Pleno
+                            </span>
+                            <p>
+                                Atuação em clientes do setor bancário. Desenvolvi e dei manutenção em APIs REST utilizando .NET 8 e implementei soluções utilizando microserviços e Docker/Kubernetes.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Usebens Seguradora Pleno -->
+                    <div class="timeline-item">
+                        <div class="timeline-date" style="color:#3498db;">
+                            <i class="fa-solid fa-shield-halved"></i> 04/2021 – 09/2022
+                        </div>
+                        <div class="timeline-content" style="border-left: 5px solid #3498db;">
+                            <h5>
+                                <i class="fa-solid fa-shield-halved"></i> Usebens Seguradora
+                            </h5>
+                            <span class="badge bg-primary mb-1">
+                                <i class="fa-solid fa-user-gear"></i> Desenvolvedor Pleno
+                            </span>
+                            <p>
+                                Atuação no setor securitário. Desenvolvi e dei manutenção em sistemas de alta performance na área de seguros.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Usebens Seguradora Junior -->
+                    <div class="timeline-item">
+                        <div class="timeline-date" style="color:#9b59b6;">
+                            <i class="fa-solid fa-shield-halved"></i> 11/2019 – 04/2021
+                        </div>
+                        <div class="timeline-content" style="border-left: 5px solid #9b59b6;">
+                            <h5>
+                                <i class="fa-solid fa-shield-halved"></i> Usebens Seguradora
+                            </h5>
+                            <span class="badge bg-purple mb-1" style="background:#9b59b6;color:#fff;">
+                                <i class="fa-solid fa-user"></i> Desenvolvedor Júnior
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Integra Consultoria e Sistemas -->
+                    <div class="timeline-item">
+                        <div class="timeline-date" style="color:#2ecc71;">
+                            <i class="fa-solid fa-building"></i> 10/2018 – 11/2019
+                        </div>
+                        <div class="timeline-content" style="border-left: 5px solid #2ecc71;">
+                            <h5>
+                                <i class="fa-solid fa-calculator"></i> Integra Consultoria e Sistemas
+                            </h5>
+                            <span class="badge bg-success mb-1">
+                                <i class="fa-solid fa-user"></i> Desenvolvedor Júnior
+                            </span>
+                            <p>
+                                Desenvolvi sistemas de contabilidade em C#.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mentoria" class="mentoria section" style="background: linear-gradient(135deg, #0d6efd 60%, #1abc9c 100%); color: #fff; padding: 3rem 0;">
+            <div class="container aos-init aos-animate text-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="section-title">
+                    <h2 style="color: #fff;"><i class="fa-solid fa-chalkboard-user"></i> Mentoria &amp; Aulas de Programação</h2>
+                </div>
+                <p style="font-size: 1.3rem; max-width: 700px; margin: 0 auto 2rem auto;">
+                    Quer aprender programação do zero ou evoluir suas habilidades? Ofereço aulas e mentoria personalizadas sobre:
+                </p>
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-10">
+                        <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-4" style="font-size: 1.15rem;">
+                            <li><i class="fa-solid fa-plug-circle-bolt"></i> APIs</li>
+                            <li><i class="fa-solid fa-database"></i> Banco de Dados</li>
+                            <li><i class="fa-brands fa-microsoft"></i> C#</li>
+                            <li><i class="fa-brands fa-java"></i> Java</li>
+                            <li><i class="fa-brands fa-linux"></i> Linux</li>
+                            <li><i class="fa-brands fa-php"></i> php</li>
+                            <li><i class="fa-brands fa-aws"></i> AWS e Cloud</li>
+                            <li><i class="fa-solid fa-c"></i> C</li>
+                            <li><i class="fa-brands fa-python"></i> Python</li>
+                            <li><i class="fa-solid fa-diagram-project"></i> Estrutura de Dados</li>
+                            <li><i class="fa-solid fa-gears"></i> Algoritmos</li>
+                            <li><i class="fa-solid fa-vial-circle-check"></i> Testes Automatizados</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="https://docs.google.com/forms/d/1C7PIi6xAtB5RQmbMMzHm4sBZZVJawsNeW49KpXvQF6g/viewform?edit_requested=true" target="_blank" class="btn btn-lg btn-warning fw-bold shadow" style="font-size:1.5rem; padding:1rem 3rem; border-radius:2rem;">
+                    <i class="fa-solid fa-paper-plane"></i> Quero saber mais!
+                </a>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <!-- Section Title -->
+            <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                <h2>Contato</h2>
+            </div><!-- End Section Title -->
+
+            <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="info-wrap aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="row gy-5">
+                        <div class="col-lg-4">
+                            <div class="info-item d-flex align-items-center">
+                                <div>
+                                    <a href="https://wa.me/5517988151122" target="_blank">
+                                        <h3>WhatsApp</h3>
+                                    </a>
+
+                                    <a href="https://wa.me/5517988151122" target="_blank" class="phone_with_ddd">(17) 98815-1122</a>
+                                </div>
+                            </div>
+                        </div><!-- End Info Item -->
+                        <div class="col-lg-4">
+                            <div class="info-item d-flex align-items-center">
+                                <div>
+                                    <h3>Ligar</h3>
+                                    <a href="tel:17988151122">(17) 98815-1122</a>
+                                </div>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="col-lg-4">
+                            <div class="info-item d-flex align-items-center">
+                                <div>
+                                    <a href="mailto:mauricio.lazaretti94@gmail.com">
+                                        <h3>E-mail</h3>
+                                    </a>
+                                    <a href="mailto:mauricio.lazaretti94@gmail.com">mauricio.lazaretti94@gmail.com</a>
+                                </div>
+                            </div>
+                        </div><!-- End Info Item -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Contact Section -->
+
+        <footer id="footer" class="footer" style="background-color: black">
+
+            <div class="container">
+
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- Preloader -->
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/typed.umd.js"></script>
+    <script src="./js/noframework.waypoints.js"></script>
+    <script src="./js/purecounter_vanilla.js"></script>
+    <script src="./js/glightbox.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./main.js"></script>
+    <style data-typed-js-cursor-css="true">
+        .typed-cursor {
+            opacity: 1;
+        }
+
+            .typed-cursor.typed-cursor--blink {
+                animation: typedjsBlink 0.7s infinite;
+                -webkit-animation: typedjsBlink 0.7s infinite;
+                animation: typedjsBlink 0.7s infinite;
+            }
+
+        @keyframes typedjsBlink {
+            50% {
+                opacity: 0.0;
+            }
+        }
+
+        @-webkit-keyframes typedjsBlink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./jquery.mask.js"></script>
+    <script src="./mask.js"></script>
+
+    <script>
+        function abrirMenu() {
+            $("#listMenu").show();
+
+            $("#menuOpen").hide();
+            $("#menuClose").show();
+        }
+        function fecharMenu() {
+            $("#listMenu").hide();
+            $("#menuOpen").show();
+            $("#menuClose").hide();
+        }
+    </script>
+
+
+</body>
+</html>

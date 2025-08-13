@@ -148,8 +148,8 @@
                         <li><a href="https://mauriciolazaretti.github.io/#contact" class="">Contato</a></li>
                     </ul>
                     <div>
-                        <i id="menuOpen" onclick="abrirMenu()" class="d-xl-none fa-solid fa-bars" style="color:white"></i>
-                        <i id="menuClose" onclick="fecharMenu()" class="d-xl-none fa-solid fa-x" style="color:white; display:none;"></i>
+                        <i id="menuOpen" class="d-xl-none fa-solid fa-bars" style="color:white"></i>
+                        <i id="menuClose" class="d-xl-none fa-solid fa-x" style="color:white; display:none;"></i>
                     </div>
                 </nav>
 
@@ -528,6 +528,16 @@
             $("#menuOpen").show();
             $("#menuClose").hide();
         }
+        $(document).ready(function () {
+            $("#menuOpen").on("click touchstart", function (e) {
+                e.preventDefault();
+                abrirMenu();
+            });
+            $("#menuClose").on("click touchstart", function (e) {
+                e.preventDefault();
+                fecharMenu();
+            });
+        });
     </script>
 
 

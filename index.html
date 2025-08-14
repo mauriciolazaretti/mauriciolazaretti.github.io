@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-<!-- saved from url=(0036)https://mauriciolazaretti.github.io/#about -->
 <html lang="pt-br">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -30,9 +29,9 @@
 
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/bootstrap-icons.css" rel="stylesheet">
-    <link href="./css/aos(1).css" rel="stylesheet">
+    <link href="./css/aos.css" rel="stylesheet">
     <link href="./css/glightbox.min.css" rel="stylesheet">
-    <link href="./css/swiper-bundle(1).min.css" rel="stylesheet">
+    <link href="./css/swiper-bundle.min.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
     <style>
         .timeline {
@@ -122,6 +121,78 @@
                         font-size: 2rem;
                     }
         }
+        /* index.html */
+        .mentoria.section {
+            background: linear-gradient(135deg, #0d6efd 60%, #1abc9c 100%);
+            color: #fff;
+            padding: 3rem 0;
+            border-radius: 2rem;
+            box-shadow: 0 8px 32px 0 rgba(13,110,253,0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mentoria .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            margin-bottom: 1.5rem;
+            animation: pulseTitle 2s infinite alternate;
+        }
+
+        @keyframes pulseTitle {
+            0% {
+                text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            }
+
+            100% {
+                text-shadow: 0 4px 16px rgba(0,0,0,0.25);
+            }
+        }
+
+        .mentoria ul li {
+            background: rgba(255,255,255,0.08);
+            border-radius: 1.5rem;
+            padding: 0.7rem 1.5rem;
+            margin: 0.3rem;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+            .mentoria ul li i {
+                margin-right: 0.7rem;
+                font-size: 1.4rem;
+                color: #ffe066;
+                filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
+                transition: color 0.3s;
+            }
+
+            .mentoria ul li:hover {
+                background: rgba(255,255,255,0.18);
+                transform: scale(1.05);
+            }
+
+        .mentoria .btn-warning {
+            background: linear-gradient(90deg, #ffe066 60%, #f6c23e 100%);
+            color: #222;
+            border: none;
+            font-size: 1.5rem;
+            padding: 1rem 3rem;
+            border-radius: 2rem;
+            box-shadow: 0 4px 24px 0 rgba(255,224,102,0.25);
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+        }
+
+            .mentoria .btn-warning:hover, .mentoria .btn-warning:focus {
+                background: linear-gradient(90deg, #f6c23e 60%, #ffe066 100%);
+                color: #0d6efd;
+                transform: scale(1.07);
+                box-shadow: 0 6px 32px 0 rgba(255,224,102,0.35);
+            }
     </style>
 </head>
 <body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0">
@@ -139,13 +210,13 @@
 
                 <nav id="navmenu" class="navmenu">
                     <ul id="listMenu">
-                        <li><a href="https://mauriciolazaretti.github.io/#home" class="active">Home<br></a></li>
-                        <li><a href="https://mauriciolazaretti.github.io/#about" class="">Sobre</a></li>
-                        <li><a href="https://mauriciolazaretti.github.io/#skills" class="">Habilidades</a></li>
-                        <li><a href="https://mauriciolazaretti.github.io/#academic" class="">Formação</a></li>
-                        <li><a href="https://mauriciolazaretti.github.io/#experience" class="">Experiência</a></li>
-                        <li><a href="https://mauriciolazaretti.github.io/#mentoria" class="">Mentoria</a></li>
-                        <li><a href="https://mauriciolazaretti.github.io/#contact" class="">Contato</a></li>
+                        <li><a href="#home" class="active">Home<br></a></li>
+                        <li><a href="#about" class="">Sobre</a></li>
+                        <li><a href="#skills" class="">Habilidades</a></li>
+                        <li><a href="#academic" class="">Formação</a></li>
+                        <li><a href="#experience" class="">Experiência</a></li>
+                        <li><a href="#mentoria" class="">Mentoria</a></li>
+                        <li><a href="#contact" class="">Contato</a></li>
                     </ul>
                     <div>
                         <i id="menuOpen" class="d-xl-none fa-solid fa-bars" style="color:white"></i>
@@ -319,7 +390,7 @@
                                 <i class="fa-solid fa-server"></i> Desenvolvedor Backend Pleno
                             </span>
                             <p>
-                                Atuação em clientes do setor bancário. Desenvolvi e dei manutenção em APIs REST utilizando .NET 8 e implementei soluções utilizando microserviços e Docker/Kubernetes.
+                                Atuando em um grande cliente do setor bancário, fui responsável pelo desenvolvimento e manutenção de APIs REST (.NET 8) em uma arquitetura de microserviços, garantindo a performance e escalabilidade de transações financeiras críticas.
                             </p>
                         </div>
                     </div>
@@ -367,7 +438,7 @@
                                 <i class="fa-solid fa-user"></i> Desenvolvedor Júnior
                             </span>
                             <p>
-                                Desenvolvi sistemas de contabilidade em C#.
+                                Desenvolvi sistemas de contabilidade em C#, .NET e JS.
                             </p>
                         </div>
                     </div>
@@ -386,18 +457,18 @@
                 <div class="row justify-content-center mb-4">
                     <div class="col-md-10">
                         <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-4" style="font-size: 1.15rem;">
-                            <li><i class="fa-solid fa-plug-circle-bolt"></i> APIs</li>
-                            <li><i class="fa-solid fa-database"></i> Banco de Dados</li>
-                            <li><i class="fa-brands fa-microsoft"></i> C#</li>
-                            <li><i class="fa-brands fa-java"></i> Java</li>
-                            <li><i class="fa-brands fa-linux"></i> Linux</li>
-                            <li><i class="fa-brands fa-php"></i> php</li>
-                            <li><i class="fa-brands fa-aws"></i> AWS e Cloud</li>
-                            <li><i class="fa-solid fa-c"></i> C</li>
-                            <li><i class="fa-brands fa-python"></i> Python</li>
-                            <li><i class="fa-solid fa-diagram-project"></i> Estrutura de Dados</li>
-                            <li><i class="fa-solid fa-gears"></i> Algoritmos</li>
-                            <li><i class="fa-solid fa-vial-circle-check"></i> Testes Automatizados</li>
+                            <li title="Desenvolvimento e consumo de APIs RESTful e SOAP."><i class="fa-solid fa-plug-circle-bolt"></i> APIs</li>
+                            <li title="Modelagem, consultas e administração de bancos relacionais e NoSQL."><i class="fa-solid fa-database"></i> Banco de Dados</li>
+                            <li title="Programação orientada a objetos e desenvolvimento .NET."><i class="fa-brands fa-microsoft"></i> C#</li>
+                            <li title="Desenvolvimento de aplicações backend, desktop e web."><i class="fa-brands fa-java"></i> Java</li>
+                            <li title="Administração de servidores, comandos e automação de tarefas."><i class="fa-brands fa-linux"></i> Linux</li>
+                            <li title="Desenvolvimento web dinâmico e integração com bancos de dados."><i class="fa-brands fa-php"></i> php</li>
+                            <li title="Serviços de nuvem, deploy e infraestrutura escalável."><i class="fa-brands fa-aws"></i> AWS e Cloud</li>
+                            <li title="Programação de baixo nível, sistemas embarcados e algoritmos."><i class="fa-solid fa-c"></i> C</li>
+                            <li title="Scripts, automação, análise de dados e inteligência artificial."><i class="fa-brands fa-python"></i> Python</li>
+                            <li title="Listas, filas, pilhas, árvores e grafos."><i class="fa-solid fa-diagram-project"></i> Estrutura de Dados</li>
+                            <li title="Lógica de programação, ordenação, busca e resolução de problemas."><i class="fa-solid fa-gears"></i> Algoritmos</li>
+                            <li title="Criação de testes unitários, integração e TDD."><i class="fa-solid fa-vial-circle-check"></i> Testes Automatizados</li>
                         </ul>
                     </div>
                 </div>
@@ -537,6 +608,12 @@
             $("#menuClose").on("click touchstart", function (e) {
                 e.preventDefault();
                 fecharMenu();
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                new bootstrap.Tooltip(tooltipTriggerEl);
             });
         });
     </script>
